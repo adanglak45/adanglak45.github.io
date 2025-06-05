@@ -105,3 +105,32 @@ h3{
 ul{
     color: black;
 }
+
+/* Portfolio styles */
+.content h1 {
+    color: black;
+}
+
+#portfolio{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #ffc0b5;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: ForestGreen;
+}
+
+#portfolio li:hover {
+    background: #eee;
+}
+
+#portfolio a{
+    text-decoration: none;
+    color: black;
+}
