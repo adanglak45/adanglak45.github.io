@@ -31,41 +31,47 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-    createPlatform(200, 700, 100, 10);
-    createPlatform(300, 600, 100, 10);
-    createPlatform(350, 350, 10, 100);
-    createPlatform(350, 350, 100, 10);
-    createPlatform(450, 350, 100, 10);
-    createPlatform(550, 350, 10, 100);
-    createPlatform(150, 500, 100, 10);
-    createPlatform(350, 450, 100, 10);
-    createPlatform(700, 200, 100, 10);
-    createPlatform(650, 500, 100, 10);
-    createPlatform(900, 300, 100, 10);
-    createPlatform(600, 600, 100, 10);
-    createPlatform(500, 600, 100, 10);
-    createPlatform(400, 500, 100, 10);
-    createPlatform(300, 400, 100, 10);
-    createPlatform(800, 600, 100, 10);
-    createPlatform(1100, 200, 100, 10);
-    createPlatform(1200, 200, 10, 100);
-    createPlatform(1100, 300, 100, 10);
-    createPlatform(1000, 300, 100, 10);
-    createPlatform(800, 400, 100, 10);
-    createPlatform(1300, 500, 100, 10);
-    createPlatform(1300, 550, 10, 150);
-    createPlatform(1200, 700, 100, 10);
-    createPlatform(1200, 550, 100, 10);
-    createPlatform(1100, 550, 100, 10);
-    createPlatform(1000, 550, 100, 10);
+    createPlatform(200, 700, 100, 10, "brown");
+    createPlatform(300, 600, 100, 10, "brown");
+    createPlatform(350, 350, 10, 100, "brown");
+    createPlatform(350, 350, 100, 10, "brown");
+    createPlatform(450, 350, 100, 10, "brown");
+    createPlatform(550, 350, 10, 100, "brown");
+    createPlatform(150, 500, 100, 10, "brown");
+    createPlatform(350, 450, 100, 10, "brown");
+    createPlatform(700, 200, 100, 10, "brown");
+    createPlatform(650, 500, 100, 10, "brown");
+    createPlatform(900, 300, 100, 10, "brown");
+    createPlatform(600, 600, 100, 10, "brown");
+    createPlatform(500, 600, 100, 10, "brown");
+    createPlatform(400, 500, 100, 10, "brown");
+    createPlatform(300, 400, 100, 10, "brown");
+    createPlatform(800, 600, 100, 10, "brown");
+    createPlatform(1100, 200, 100, 10, "brown");
+    createPlatform(1200, 200, 10, 100, "brown");
+    createPlatform(1100, 300, 100, 10, "brown");
+    createPlatform(1000, 300, 100, 10, "brown");
+    createPlatform(800, 400, 100, 10, "brown");
+    createPlatform(1300, 500, 100, 10, "brown");
+    createPlatform(1300, 550, 10, 150, "brown");
+    createPlatform(1200, 700, 100, 10, "brown");
+    createPlatform(1200, 550, 100, 10, "brown");
+    createPlatform(1100, 550, 100, 10, "brown");
+    createPlatform(1000, 550, 100, 10, "brown");
 
 
     // TODO 3 - Create Collectables
-
-
+    createCollectable("yellowdinosaur", 400, 400);
+    createCollectable("dino", 1221, 650, 0.5, 0.7);
+    createCollectable("trex", 1150, 250, 0.5, 0.5);
+    createCollectable("triceratops", 750, 150);
 
     
     // TODO 4 - Create Cannons
+    createCannon("top", 200, 2000);
+    createCannon("right", 300, 4000);
+    createCannon("bottom", 900, 1000);
+
 
 
     

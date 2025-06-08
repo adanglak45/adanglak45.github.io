@@ -3,8 +3,16 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  background-image: url(https://media.istockphoto.com/id/1050196856/vector/vector-illustration-of-silhouette-of-dinosaurs-on-the-jurassic-period-landscape-with.jpg?s=612x612&w=0&k=20&c=J-0l37ErexNz4yCrrdktRGVSmpOXVLV5JceNEe7xhfc=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
   margin: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(42, 124, 42);
+  border-raduis: 20px;
 }
 
 img {
