@@ -3,7 +3,7 @@ body {
 }
 
 canvas {
-  background-image: url(https://media.istockphoto.com/id/1050196856/vector/vector-illustration-of-silhouette-of-dinosaurs-on-the-jurassic-period-landscape-with.jpg?s=612x612&w=0&k=20&c=J-0l37ErexNz4yCrrdktRGVSmpOXVLV5JceNEe7xhfc=);
+  background-image: url(https://www.shutterstock.com/image-vector/vector-empty-nature-landscape-illustration-600nw-2534319987.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,7 +12,8 @@ canvas {
   border-style: solid;
   border-width: 10px;
   border-color: rgb(42, 124, 42);
-  border-raduis: 20px;
+  border-radius: 20px;
+
 }
 
 img {
