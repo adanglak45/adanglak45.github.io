@@ -6,6 +6,18 @@
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+		body {
+			background-image: url(https://wallpapercat.com/w/full/0/d/f/829602-3840x2160-desktop-4k-phineas-and-ferb-background.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			background-color: plum;
+			border-style: solid;
+			border-radius: 10px;
+			border-width: 5px;
+			border-color: mediumpurple;
+
+		}
 		.box {
 			width: 70px;
 			height: 70px;
@@ -22,6 +34,9 @@
 
 		.board {
 			height: 100vh;
+		}
+		#box {
+			position: absolute;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -44,6 +59,8 @@
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
+			var boardHeight = jQuery(window).height();
+			
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
@@ -52,8 +69,10 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
+				box.css("top", newPositionY);
+				
 				
 
 			}
@@ -71,9 +90,9 @@
 			 var positionX = 0;
 			 var points = 0;
 			 var speed = 10;
-
-
-
+			 var positionY = 0;
+			 var speedY = 2;
+			 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -83,12 +102,19 @@
 				moveBoxTo(300);
 				moveBoxTo(boardWidth);
 				positionX = positionX + speed;
-				moveBoxTo(positionX);
+				moveBoxTo(positionX, positionY);
 				if(positionX > boardWidth){
 					speed = speed * -1;
 				}
 				if(positionX < 0){
 					speed = speed * -1;
+				}
+				positionY = positionY + speedY;
+				if(positionY > boardHeight){
+					speedY = speedY * -1;
+				}
+				if(positionY < 0){
+					speedY = speedY * -1;
 				}
 
 
@@ -103,7 +129,7 @@
 				positionX = 0;
 				points = points +1;
 				changeBoxText(points);
-				speed = speed + 3;
+				speed = 3 * points + 10;
 
 
 			};
